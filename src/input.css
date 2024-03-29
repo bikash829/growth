@@ -40,9 +40,22 @@
 @tailwind variants;
 
 @layer base {
+  section {
+    @apply flex flex-col gap-10;
+  }
 }
 
 @layer components {
+  .section-name {
+    @apply inline-block rounded-lg border border-site-transparent_white bg-site-lightdark px-12 py-1 text-center font-Poppins text-custom-xl font-light;
+  }
+  .card-sm {
+    @apply hover:bg-site-lightdark_brighter flex flex-col gap-[7px] rounded-3xl border border-site-transparent_semi_white bg-site-lightdark py-7 leading-none;
+  }
+
+  .section-title {
+    @apply font-light leading-none;
+  }
 }
 
 @layer utilities {

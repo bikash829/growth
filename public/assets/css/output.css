@@ -459,6 +459,12 @@ video {
   display: none;
 }
 
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -590,6 +596,47 @@ video {
   }
 }
 
+.section-name{
+  display: inline-block;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.12);
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.card-sm{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border-radius: 1.5rem;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.08);
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  line-height: 1;
+}
+
+.card-sm:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgba(40, 40, 40, var(--tw-bg-opacity));
+}
+
+.section-title{
+  font-weight: 300;
+  line-height: 1;
+}
+
 /* This will always be included in your compiled CSS */
 
 .card {
@@ -601,32 +648,194 @@ video {
   * by plugins.
   */
 
-.inline-block{
-  display: inline-block;
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex{
   display: flex;
 }
 
+.table{
+  display: table;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-1{
+  height: 0.25rem;
+}
+
+.w-\[190px\]{
+  width: 190px;
+}
+
+.w-\[160px\]{
+  width: 160px;
+}
+
+.flex-shrink-0{
+  flex-shrink: 0;
+}
+
+.shrink{
+  flex-shrink: 1;
+}
+
+.grow{
+  flex-grow: 1;
+}
+
+.basis-10\/12{
+  flex-basis: 83.333333%;
+}
+
+.basis-2\/12{
+  flex-basis: 16.666667%;
+}
+
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-45{
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-90{
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.resize{
+  resize: both;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
 
-.gap-80{
-  gap: 20rem;
+.content-center{
+  align-content: center;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
+.content-end{
+  align-content: flex-end;
 }
 
-.border-solid{
-  border-style: solid;
+.justify-center{
+  justify-content: center;
 }
 
-.border-site-transparent_white{
-  border-color: rgba(255, 255, 255, 0.12);
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-20{
+  gap: 5rem;
+}
+
+.gap-3{
+  gap: 0.75rem;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
+}
+
+.rounded-\[2rem\]{
+  border-radius: 2rem;
+}
+
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-b-2{
+  border-bottom-width: 2px;
+}
+
+.border-none{
+  border-style: none;
+}
+
+.border-site-border_blue{
+  --tw-border-opacity: 1;
+  border-color: rgb(67 67 237 / var(--tw-border-opacity));
+}
+
+.border-site-transparent_light_white{
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-site-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 67 237 / var(--tw-bg-opacity));
 }
 
 .bg-site-dark{
@@ -634,63 +843,146 @@ video {
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
-.bg-site-lightdark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
+.bg-site-transparent_blue{
+  background-color: rgba(67, 67, 237, 0.2);
 }
 
-.p-4{
-  padding: 1rem;
+.bg-opacity-20{
+  --tw-bg-opacity: 0.2;
 }
 
-.px-48{
-  padding-left: 12rem;
-  padding-right: 12rem;
+.p-10{
+  padding: 2.5rem;
 }
 
-.py-4{
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-\[10px\]{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pt-4{
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
+.pt-5{
+  padding-top: 1.25rem;
 }
 
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.pb-9{
+  padding-bottom: 2.25rem;
 }
 
 .text-center{
   text-align: center;
 }
 
-.font-Poppins{
-  font-family: Poppins, sans-serif;
+.text-end{
+  text-align: end;
 }
 
 .font-Inter{
   font-family: Inter, sans-serif;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.font-Poppins{
+  font-family: Poppins, sans-serif;
+}
+
+.text-\[2rem\]{
+  font-size: 2rem;
+}
+
+.text-custom-4xl{
+  font-size: 2.25rem;
+}
+
+.text-custom-5xl{
+  font-size: 42px;
+}
+
+.text-custom-8xl{
+  font-size: 4.125rem;
+}
+
+.text-custom-lg{
+  font-size: 1.125rem;
+}
+
+.text-custom-md{
+  font-size: 1rem;
+}
+
+.text-custom-sm{
+  font-size: 0.875rem;
+}
+
+.text-custom-xl{
+  font-size: 1.5rem;
 }
 
 .font-light{
   font-weight: 300;
 }
 
-.font-normal{
-  font-weight: 400;
+.italic{
+  font-style: italic;
+}
+
+.leading-\[120\%\]{
+  line-height: 120%;
+}
+
+.leading-\[140\%\]{
+  line-height: 140%;
+}
+
+.text-site-blue{
+  --tw-text-opacity: 1;
+  color: rgb(67 67 237 / var(--tw-text-opacity));
+}
+
+.text-site-transparent_light_white{
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .text-site-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline{
+  text-decoration-line: underline;
+}
+
+.ring{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
 }
 
 /**
@@ -700,3 +992,7 @@ video {
   * If omitted, Tailwind will append these classes to the very end of
   * your stylesheet by default.
   */
+
+.hover\:bg-opacity-60:hover{
+  --tw-bg-opacity: 0.6;
+}
