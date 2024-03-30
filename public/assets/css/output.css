@@ -869,10 +869,6 @@ section{
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-.border-site-transparent_semi_white{
-  border-color: rgba(255, 255, 255, 0.08);
-}
-
 .bg-site-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(67 67 237 / var(--tw-bg-opacity));
@@ -883,21 +879,12 @@ section{
   background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
-.bg-site-lightdark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 31 31 / var(--tw-bg-opacity));
-}
-
 .bg-site-transparent_blue{
   background-color: rgba(67, 67, 237, 0.2);
 }
 
 .bg-opacity-20{
   --tw-bg-opacity: 0.2;
-}
-
-.bg-opacity-80{
-  --tw-bg-opacity: 0.8;
 }
 
 .object-center{
@@ -912,16 +899,6 @@ section{
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .py-\[10px\]{
@@ -1007,10 +984,6 @@ section{
 
 .font-light{
   font-weight: 300;
-}
-
-.font-medium{
-  font-weight: 500;
 }
 
 .italic{
