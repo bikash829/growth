@@ -691,6 +691,31 @@ section{
   text-align: center;
 }
 
+.button{
+  border-radius: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 0.875rem;
+}
+
+.button-primary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(67 67 237 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.button-primary:hover{
+  --tw-bg-opacity: 0.9;
+}
+
 /* This will always be included in your compiled CSS */
 
 .card {
@@ -737,6 +762,10 @@ section{
 
 .mt-20{
   margin-top: 5rem;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -870,8 +899,16 @@ section{
   gap: 1.5rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
 }
 
 .rounded-\[2rem\]{
@@ -880,10 +917,6 @@ section{
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-xl{
-  border-radius: 0.75rem;
 }
 
 .rounded-t-\[2rem\]{
@@ -949,14 +982,8 @@ section{
   padding-right: 1rem;
 }
 
-.py-\[10px\]{
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .pb-9{
@@ -977,10 +1004,6 @@ section{
 
 .pt-5{
   padding-top: 1.25rem;
-}
-
-.pb-6{
-  padding-bottom: 1.5rem;
 }
 
 .pt-8{
@@ -1047,12 +1070,20 @@ section{
   font-size: 0.625rem;
 }
 
+.text-\[160px\]{
+  font-size: 160px;
+}
+
 .font-light{
   font-weight: 300;
 }
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-normal{
+  font-weight: 400;
 }
 
 .uppercase{
@@ -1075,9 +1106,18 @@ section{
   line-height: 140%;
 }
 
+.leading-\[100\%\]{
+  line-height: 100%;
+}
+
 .text-site-blue{
   --tw-text-opacity: 1;
   color: rgb(67 67 237 / var(--tw-text-opacity));
+}
+
+.text-site-dark{
+  --tw-text-opacity: 1;
+  color: rgb(17 17 17 / var(--tw-text-opacity));
 }
 
 .text-site-transparent_light_white{
@@ -1091,6 +1131,10 @@ section{
 
 .underline{
   text-decoration-line: underline;
+}
+
+.decoration-neutral-50{
+  text-decoration-color: #fafafa;
 }
 
 .ring{
@@ -1125,4 +1169,8 @@ section{
 
 .hover\:bg-opacity-60:hover{
   --tw-bg-opacity: 0.6;
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }

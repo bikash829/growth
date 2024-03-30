@@ -73,6 +73,12 @@
   .team-card-details {
     @apply rounded-b-3xl bg-site-lightdark py-4 text-center;
   }
+  .button {
+    @apply rounded-xl px-6 py-[10px] text-custom-sm;
+  }
+  .button-primary {
+    @apply bg-site-blue text-site-white transition duration-500 hover:bg-opacity-90;
+  }
 }
 
 @layer utilities {
