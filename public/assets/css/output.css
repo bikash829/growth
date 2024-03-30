@@ -879,6 +879,10 @@ section{
   justify-content: space-between;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-20{
   gap: 5rem;
 }
@@ -897,10 +901,6 @@ section{
 
 .gap-6{
   gap: 1.5rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .overflow-hidden{
@@ -1026,6 +1026,10 @@ section{
   font-family: Poppins, sans-serif;
 }
 
+.text-\[160px\]{
+  font-size: 160px;
+}
+
 .text-\[20px\]{
   font-size: 20px;
 }
@@ -1070,20 +1074,12 @@ section{
   font-size: 0.625rem;
 }
 
-.text-\[160px\]{
-  font-size: 160px;
-}
-
 .font-light{
   font-weight: 300;
 }
 
 .font-medium{
   font-weight: 500;
-}
-
-.font-normal{
-  font-weight: 400;
 }
 
 .uppercase{
@@ -1098,16 +1094,16 @@ section{
   font-style: italic;
 }
 
+.leading-\[100\%\]{
+  line-height: 100%;
+}
+
 .leading-\[120\%\]{
   line-height: 120%;
 }
 
 .leading-\[140\%\]{
   line-height: 140%;
-}
-
-.leading-\[100\%\]{
-  line-height: 100%;
 }
 
 .text-site-blue{
@@ -1131,10 +1127,6 @@ section{
 
 .underline{
   text-decoration-line: underline;
-}
-
-.decoration-neutral-50{
-  text-decoration-color: #fafafa;
 }
 
 .ring{
