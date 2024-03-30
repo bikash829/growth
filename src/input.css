@@ -50,7 +50,7 @@
     @apply inline-block rounded-lg border border-site-transparent_white bg-site-lightdark px-12 py-1 text-center font-Poppins text-custom-xl font-light;
   }
   .card-sm {
-    @apply hover:bg-site-lightdark_brighter flex flex-col gap-[7px] rounded-3xl border border-site-transparent_semi_white bg-site-lightdark py-7 leading-none;
+    @apply flex flex-col gap-[7px] rounded-3xl border border-site-transparent_semi_white bg-site-lightdark py-7 leading-none hover:bg-site-lightdark_brighter;
   }
 
   .section-title {
@@ -59,6 +59,13 @@
 
   .testimonial-card {
     @apply flex w-[330px] flex-shrink-0 flex-col gap-6 rounded-3xl bg-site-lightdark p-4;
+  }
+
+  .faq-card {
+    @apply rounded-xl border border-site-transparent_semi_white bg-site-lightdark bg-opacity-80 px-6 py-5;
+  }
+  .faq-card-header {
+    @apply cursor-pointer font-Inter text-custom-lg font-medium leading-[120%];
   }
 }
 
