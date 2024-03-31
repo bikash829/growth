@@ -9,3 +9,125 @@
 .team__member-card:hover > .team__member-card__details {
   background-color: rgba(67, 67, 237, 0.2);
 }
+
+/* logo  */
+.logo:hover,
+.logo:hover > span {
+  color: rgba(31, 31, 31, 1);
+  transition: all 500ms linear;
+}
+/* hamburger menu code  */
+
+.menu-toggle {
+  width: 32px;
+  height: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  /* background-color: gray; */
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
+  border-radius: 5px;
+}
+.bar:nth-child(1),
+.bar:nth-child(3) {
+  width: 60%;
+}
+
+.menu-open .bar:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+  width: 100%;
+}
+
+.menu-open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .bar:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+  width: 100%;
+}
+
+/* <-hamburger menu code  */
+
+.nav-container {
+  /* background-image: linear-gradient(
+    45deg,
+    hsl(244deg 93% 47%) 0%,
+    hsl(247deg 95% 35%) 7%,
+    hsl(250deg 97% 23%) 15%,
+    hsl(252deg 99% 11%) 22%,
+    hsl(253deg 100% 8%) 30%,
+    hsl(253deg 100% 8%) 37%,
+    hsl(253deg 100% 8%) 45%,
+    hsl(253deg 100% 8%) 52%,
+    hsl(253deg 100% 8%) 60%,
+    hsl(253deg 100% 8%) 68%,
+    hsl(252deg 99% 11%) 76%,
+    hsl(250deg 97% 23%) 84%,
+    hsl(247deg 95% 35%) 92%,
+    hsl(244deg 93% 47%) 100%
+  ); */
+  background-image: linear-gradient(
+    55deg,
+    hsl(240deg 83% 60%) 0%,
+    hsl(236deg 58% 46%) 11%,
+    hsl(231deg 61% 33%) 20%,
+    hsl(227deg 64% 20%) 26%,
+    hsl(229deg 66% 15%) 31%,
+    hsl(233deg 69% 13%) 36%,
+    hsl(236deg 72% 11%) 42%,
+    hsl(238deg 72% 11%) 48%,
+    hsl(236deg 70% 11%) 56%,
+    hsl(234deg 67% 12%) 64%,
+    hsl(233deg 65% 16%) 72%,
+    hsl(236deg 62% 30%) 81%,
+    hsl(238deg 59% 45%) 90%,
+    hsl(240deg 83% 60%) 100%
+  );
+}
+
+.main-gradient-circle {
+  /* background-image: linear-gradient(
+    45deg,
+    hsl(240deg 83% 60%) 0%,
+    hsl(236deg 58% 46%) 5%,
+    hsl(231deg 61% 33%) 10%,
+    hsl(227deg 64% 20%) 17%,
+    hsl(229deg 66% 15%) 24%,
+    hsl(233deg 69% 13%) 32%,
+    hsl(236deg 72% 11%) 41%,
+    hsl(238deg 72% 11%) 49%,
+    hsl(236deg 70% 11%) 57%,
+    hsl(234deg 67% 12%) 66%,
+    hsl(233deg 65% 16%) 74%,
+    hsl(236deg 62% 30%) 83%,
+    hsl(238deg 59% 45%) 91%,
+    hsl(240deg 83% 60%) 100%
+  ); */
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 76% 52%) 0%,
+    hsl(238deg 61% 41%) 5%,
+    hsl(236deg 54% 29%) 10%,
+    hsl(234deg 48% 16%) 17%,
+    hsl(235deg 37% 12%) 24%,
+    hsl(237deg 26% 10%) 32%,
+    hsl(239deg 17% 9%) 41%,
+    hsl(239deg 17% 9%) 49%,
+    hsl(237deg 26% 10%) 57%,
+    hsl(235deg 37% 12%) 66%,
+    hsl(234deg 48% 16%) 74%,
+    hsl(236deg 54% 29%) 83%,
+    hsl(238deg 61% 41%) 91%,
+    hsl(240deg 76% 52%) 100%
+  );
+}
