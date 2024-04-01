@@ -131,3 +131,27 @@
     hsl(240deg 76% 52%) 100%
   );
 }
+
+.gradient-corner {
+  background-image: linear-gradient(
+    45deg,
+    hsl(240deg 76% 52%) 0%,
+    hsl(238deg 61% 41%) 5%,
+    hsl(236deg 54% 29%) 10%,
+    hsl(234deg 48% 16%) 17%,
+    hsl(235deg 37% 12%) 24%,
+    hsl(237deg 26% 10%) 32%,
+    hsl(239deg 17% 9%) 41%,
+    hsl(239deg 17% 9%) 49%,
+    hsl(237deg 26% 10%) 57%,
+    hsl(235deg 37% 12%) 66%,
+    hsl(234deg 48% 16%) 74%,
+    hsl(236deg 54% 29%) 83%,
+    hsl(238deg 61% 41%) 91%,
+    hsl(240deg 76% 52%) 100%
+  );
+}
+
+.big-rectangle {
+  opacity: 0.3;
+}

@@ -107,8 +107,34 @@
 
         <div class="banner">
           <div
-            class="main-gradient-circle mx-auto h-[388px] w-[388px] rounded-full border border-site-border_blue border-opacity-30 bg-slate-600"
-          ></div>
+            class="relative mx-auto h-[388px] w-[388px] border border-gray-500"
+          >
+            <div
+              class="main-gradient-circle absolute z-30 mx-auto h-[388px] w-[388px] rounded-full border border-site-border_blue border-opacity-30 bg-slate-600"
+            ></div>
+            <div
+              class="absolute left-0 top-0 z-20 h-[268px] w-[194px] bg-transparent"
+            >
+              <div class="relative h-full w-full overflow-hidden">
+                <div
+                  class="main-gradient-circle absolute left-0 top-0 z-10 h-[350px] w-[268px]"
+                ></div>
+              </div>
+            </div>
+
+            <div class="absolute bottom-0 right-0 h-[100px] w-[100px]">
+              <div class="relative h-full w-full overflow-hidden">
+                <div
+                  class="main-gradient-circle absolute bottom-0 right-0 z-20 h-[150px] w-[150px] bg-opacity-50"
+                ></div>
+              </div>
+              <div class="absolute bottom-0 right-0 h-full w-full">
+                <div
+                  class="main-gradient-circle big-rectangle absolute bottom-0 right-0 z-10 h-[164px] w-[164px] bg-opacity-20"
+                ></div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- <div class="menu-icon" onclick="toggleMenuIcon(this)">
           <div class="bar1"></div>
