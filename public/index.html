@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,76 +22,87 @@
   <body class="bg-site-dark font-Poppins">
     <main class="container flex flex-col gap-20 pt-5 text-site-white">
       <!-- Header -->
-      <header class="flex flex-col gap-10">
-        <nav class="flex flex-col gap-6">
+      <header class="flex flex-col gap-10" id="home">
+        <!-- navigation menu  -->
+        <nav id="nav" class="flex flex-col gap-6">
           <div class="flex flex-row justify-between">
             <div>
               <button
                 class="logo button button-dark text-custom-md text-site-transparent_light_white"
               >
-                The<span class="font-semibold text-site-white">Growth</span>
+                <a href="#"
+                  >The<span class="font-semibold text-site-white"
+                    >Growth</span
+                  ></a
+                >
               </button>
             </div>
             <div class="content-center">
-              <div class="menu-toggle">
+              <div id="hamburgerMenu" class="menu-toggle cursor-pointer">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar ms-auto"></div>
               </div>
             </div>
           </div>
+          <!-- navigation menu  -->
           <div
-            class="nav-container flex flex-col gap-9 rounded-2xl border border-gray-700 py-10 text-custom-2xl text-site-transparent_light_white"
+            id="navMenu"
+            class="nav-container hidden flex-col gap-9 rounded-2xl border border-gray-700 py-10 text-custom-2xl text-site-transparent_light_white"
           >
+            <!-- Menu  -->
             <ul class="flex flex-col justify-center gap-6 text-center">
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   class="capitalize transition-all duration-500 hover:text-site-white"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#service"
                   class="capitalize transition-all duration-500 hover:text-site-white"
-                  >About</a
+                  >Service</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#reviews"
                   class="capitalize transition-all duration-500 hover:text-site-white"
-                  >Services</a
+                  >Reviews</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#team"
                   class="capitalize transition-all duration-500 hover:text-site-white"
-                  >Advantages</a
+                  >Our Team</a
                 >
               </li>
             </ul>
+            <!-- Social Icons  -->
             <div class="grid grid-cols-2 gap-6 text-custom-xl text-white">
               <div class="text-right">
                 <div class="social-icon inline-block">
-                  <i class="fa-brands fa-linkedin-in"></i>
+                  <a href="linkdin.com"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
                 </div>
               </div>
               <div class="text-start">
                 <div class="social-icon inline-block">
-                  <i class="fa-brands fa-x-twitter"></i>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
               </div>
               <div class="text-right">
                 <div class="social-icon inline-block">
-                  <i class="fa-solid fa-rotate-right"></i>
+                  <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
               </div>
               <div class="text-start">
                 <div class="social-icon inline-block">
-                  <i class="fa-brands fa-behance"></i>
+                  <a href="#"><i class="fa-brands fa-behance"></i></a>
                 </div>
               </div>
             </div>
@@ -103,9 +114,11 @@
               </button>
             </div>
           </div>
+          <!--./ navigation menu -->
         </nav>
 
-        <div class="banner">
+        <!-- banner  -->
+        <div class="banner flex flex-col gap-[120px]">
           <div class="relative mx-auto h-[388px] w-[388px]">
             <!-- The circle  -->
             <div
@@ -128,12 +141,11 @@
                   class="main-gradient-circle absolute bottom-0 right-0 z-20 h-[150px] w-[150px] bg-opacity-50"
                 ></div>
               </div>
-              <div class="absolute bottom-0 right-0 h-full w-full">
-                <div
-                  class="main-gradient-circle big-rectangle absolute bottom-0 right-0 z-10 h-[164px] w-[164px] bg-opacity-20"
-                ></div>
-              </div>
             </div>
+            <div
+              class="main-gradient-circle big-rectangle absolute bottom-0 right-0 z-10 h-[164px] w-[164px] bg-opacity-20"
+            ></div>
+            <!--./ bottom right rectangle -->
             <!-- content  -->
             <div
               class="absolute z-40 flex h-full w-full flex-col justify-center text-center"
@@ -153,15 +165,18 @@
                 </div>
                 <div>
                   <form>
-                    <div class="relative">
+                    <div id="formContainer" class="relative">
                       <input
+                        id="emailInput"
                         type="text"
                         placeholder="Your email"
                         name="email"
+                        required
                         autocomplete="name"
                         class="w-full rounded-[2rem] border border-gray-400 border-opacity-20 bg-site-lightdark bg-opacity-40 py-4 pr-[90px] ps-6 text-custom-base text-site-white outline-none"
                       />
                       <input
+                        id="submitButton"
                         class="absolute bottom-0 right-0 h-full cursor-pointer rounded-[2rem] bg-gray-700 bg-opacity-30 px-7 py-4 text-custom-base text-site-white"
                         type="submit"
                         name="submit"
@@ -172,13 +187,80 @@
                 </div>
               </div>
             </div>
+            <!--./ content -->
+          </div>
+          <!-- logo  -->
+          <div class="overflow-hidden">
+            <ul
+              class="flex flex-row justify-start gap-6 text-site-transparent_light_white"
+            >
+              <!-- <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-297.svg"
+                  />
+                </div>
+              </li> -->
+              <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-286.svg"
+                  />
+                </div>
+              </li>
+              <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-287.svg"
+                  />
+                </div>
+              </li>
+              <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-288.svg"
+                  />
+                </div>
+              </li>
+              <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-311.svg"
+                  />
+                </div>
+              </li>
+              <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-317.svg"
+                  />
+                </div>
+              </li>
+              <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-321.svg"
+                  />
+                </div>
+              </li>
+              <li class="flex-shrink-0">
+                <div class="max-w-44 object-fill">
+                  <img
+                    class="w-full"
+                    src="assets/images/logo/logoipsum-325.svg"
+                  />
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- <div class="menu-icon" onclick="toggleMenuIcon(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div> -->
       </header>
 
       <!--./ Header -->
@@ -237,7 +319,7 @@
       <!-- ./ About Us-->
 
       <!-- Our Service -->
-      <section>
+      <section id="service">
         <div class="flex flex-col gap-6">
           <div>
             <h2 class="section-name">
@@ -390,7 +472,7 @@
       <!--./ Advantages-->
 
       <!-- Testimonial -->
-      <section>
+      <section id="reviews">
         <div class="flex flex-col gap-6">
           <div class="text-center">
             <h2 class="section-name">
@@ -567,7 +649,7 @@
       <!--./ FAQ -->
 
       <!-- Team -->
-      <section>
+      <section id="team">
         <div class="flex flex-col gap-6">
           <div class="text-center">
             <h2 class="section-name capitalize">
