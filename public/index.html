@@ -22,8 +22,8 @@
   <body class="bg-site-dark font-Poppins">
     <main class="container flex flex-col gap-20 pt-5 text-site-white">
       <!-- Header -->
-      <header>
-        <nav class="hidden flex-col gap-6">
+      <header class="flex flex-col gap-10">
+        <nav class="flex flex-col gap-6">
           <div class="flex flex-row justify-between">
             <div>
               <button
@@ -106,12 +106,12 @@
         </nav>
 
         <div class="banner">
-          <div
-            class="relative mx-auto h-[388px] w-[388px] border border-gray-500"
-          >
+          <div class="relative mx-auto h-[388px] w-[388px]">
+            <!-- The circle  -->
             <div
               class="main-gradient-circle absolute z-30 mx-auto h-[388px] w-[388px] rounded-full border border-site-border_blue border-opacity-30 bg-slate-600"
             ></div>
+            <!-- top left rectangle  -->
             <div
               class="absolute left-0 top-0 z-20 h-[268px] w-[194px] bg-transparent"
             >
@@ -121,7 +121,7 @@
                 ></div>
               </div>
             </div>
-
+            <!-- bottom right rectangle -->
             <div class="absolute bottom-0 right-0 h-[100px] w-[100px]">
               <div class="relative h-full w-full overflow-hidden">
                 <div
@@ -132,6 +132,44 @@
                 <div
                   class="main-gradient-circle big-rectangle absolute bottom-0 right-0 z-10 h-[164px] w-[164px] bg-opacity-20"
                 ></div>
+              </div>
+            </div>
+            <!-- content  -->
+            <div
+              class="absolute z-40 flex h-full w-full flex-col justify-center text-center"
+            >
+              <div class="flex flex-col gap-7">
+                <div>
+                  <p class="text-center text-custom-base leading-4">
+                    An absolutely free landing made specifically for helping you
+                    to launch your first MVP
+                  </p>
+                </div>
+                <div>
+                  <h2 class="text-[32px] leading-[130%]">
+                    Next level of
+                    <span class="text-site-blue">startups</span> and projects
+                  </h2>
+                </div>
+                <div>
+                  <form>
+                    <div class="relative">
+                      <input
+                        type="text"
+                        placeholder="Your email"
+                        name="email"
+                        autocomplete="name"
+                        class="w-full rounded-[2rem] border border-gray-400 border-opacity-20 bg-site-lightdark bg-opacity-40 py-4 pr-[90px] ps-6 text-custom-base text-site-white outline-none"
+                      />
+                      <input
+                        class="absolute bottom-0 right-0 h-full cursor-pointer rounded-[2rem] bg-gray-700 bg-opacity-30 px-7 py-4 text-custom-base text-site-white"
+                        type="submit"
+                        name="submit"
+                        value="Get It"
+                      />
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
