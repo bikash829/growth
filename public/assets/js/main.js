@@ -27,3 +27,11 @@ $(document).ready(function () {
     $("#navMenu").toggleClass("flex hidden");
   });
 });
+
+$(document).ready(function () {
+  Marquee3k.init();
+});
+
+$(document).ready(function () {
+  $(".testimonial-container").addClass("moveRightToLeft");
+});
