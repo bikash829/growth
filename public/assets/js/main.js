@@ -36,27 +36,27 @@ $(document).ready(function () {
   $(".testimonial-container").addClass("moveRightToLeft");
 });
 
-// scroll marquee animation
-const scrollers = document.querySelectorAll(".scroller");
+// scroll marquee animation -->
+const scrollers = $(".scroller");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
 
 function addAnimation() {
-  scrollers.forEach((scroller) => {
-    scroller.setAttribute("data-animated", true);
+  scrollers.each(function () {
+    $(this).attr("data-animated", true);
 
-    const scrollerInner = scroller.querySelector(".scroller__inner");
-    const scrollerContent = Array.from(scrollerInner.children);
-    // console.log(scrollerContent);
+    const scrollerInner = $(this).find(".scroller__inner");
+    const scrollerContent = scrollerInner.children().toArray();
 
-    scrollerContent.forEach((content) => {
-      const duplicatedItem = content.cloneNode(true);
-      //   scrollerInner.appendChild(clone);
-      duplicatedItem.setAttribute("area-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
+    scrollerContent.forEach(function (content) {
+      const duplicatedItem = $(content).clone(true);
+      duplicatedItem.attr("area-hidden", true);
+      scrollerInner.append(duplicatedItem);
       console.log(duplicatedItem);
     });
   });
 }
+
+//<-- scroll marquee animation
