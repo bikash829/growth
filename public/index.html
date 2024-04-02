@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,252 @@
 
     <!-- aos  -->
     <link rel="stylesheet" href="assets/vendor/aos-master/dist/aos.css" />
+    <!-- jQuery -->
+    <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
   </head>
   <body class="bg-site-dark font-Poppins">
-    <main class="container flex flex-col gap-20 text-site-white">
-      <!-- About Us-->
+    <main class="container flex flex-col gap-20 pt-5 text-site-white">
+      <!-- Header -->
+      <header class="flex flex-col gap-10" id="home">
+        <!-- navigation menu  -->
+        <nav id="nav" class="flex flex-col gap-6">
+          <div class="flex flex-row justify-between">
+            <div>
+              <button
+                class="logo button button-dark text-custom-md text-site-transparent_light_white"
+              >
+                <a href="#"
+                  >The<span class="font-semibold text-site-white"
+                    >Growth</span
+                  ></a
+                >
+              </button>
+            </div>
+            <div class="content-center">
+              <div id="hamburgerMenu" class="menu-toggle cursor-pointer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar ms-auto"></div>
+              </div>
+            </div>
+          </div>
+          <!-- navigation menu  -->
+          <div
+            id="navMenu"
+            class="nav-container hidden flex-col gap-9 rounded-2xl border border-gray-700 py-10 text-custom-2xl text-site-transparent_light_white"
+          >
+            <!-- Menu  -->
+            <ul class="flex flex-col justify-center gap-6 text-center">
+              <li>
+                <a
+                  href="#home"
+                  class="capitalize transition-all duration-500 hover:text-site-white"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#service"
+                  class="capitalize transition-all duration-500 hover:text-site-white"
+                  >Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#reviews"
+                  class="capitalize transition-all duration-500 hover:text-site-white"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#team"
+                  class="capitalize transition-all duration-500 hover:text-site-white"
+                  >Our Team</a
+                >
+              </li>
+            </ul>
+            <!-- Social Icons  -->
+            <div class="grid grid-cols-2 gap-6 text-custom-xl text-white">
+              <div class="text-right">
+                <div class="social-icon inline-block">
+                  <a href="linkdin.com"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="text-start">
+                <div class="social-icon inline-block">
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+              </div>
+              <div class="text-right">
+                <div class="social-icon inline-block">
+                  <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+                </div>
+              </div>
+              <div class="text-start">
+                <div class="social-icon inline-block">
+                  <a href="#"><i class="fa-brands fa-behance"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center text-white">
+              <button
+                class="button border border-site-border_blue bg-site-blue bg-opacity-20 transition duration-1000 hover:bg-opacity-60"
+              >
+                Get Free Template
+              </button>
+            </div>
+          </div>
+          <!--./ navigation menu -->
+        </nav>
 
-      <section class="pt-4">
+        <!-- banner  -->
+        <div class="banner flex flex-col gap-[120px]">
+          <!-- Header content -->
+          <div class="relative mx-auto h-[388px] w-[388px]">
+            <!-- The circle  -->
+            <div
+              class="main-gradient-circle absolute z-30 mx-auto h-[388px] w-[388px] rounded-full border border-site-border_blue border-opacity-30 bg-slate-600"
+            ></div>
+            <!-- top left rectangle  -->
+            <div
+              class="absolute left-0 top-0 z-20 h-[268px] w-[194px] bg-transparent"
+            >
+              <div class="relative h-full w-full overflow-hidden">
+                <div
+                  class="main-gradient-circle absolute left-0 top-0 z-10 h-[350px] w-[268px]"
+                ></div>
+              </div>
+            </div>
+            <!-- bottom right rectangle -->
+            <div class="absolute bottom-0 right-0 h-[100px] w-[100px]">
+              <div class="relative h-full w-full overflow-hidden">
+                <div
+                  class="main-gradient-circle absolute bottom-0 right-0 z-20 h-[150px] w-[150px] bg-opacity-50"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="main-gradient-circle big-rectangle absolute bottom-0 right-0 z-10 h-[164px] w-[164px] bg-opacity-20"
+            ></div>
+            <!--./ bottom right rectangle -->
+            <!-- content  -->
+            <div
+              class="absolute z-40 flex h-full w-full flex-col justify-center text-center"
+            >
+              <div class="flex flex-col gap-7">
+                <div>
+                  <p class="text-center text-custom-base leading-4">
+                    An absolutely free landing made specifically for helping you
+                    to launch your first MVP
+                  </p>
+                </div>
+                <div>
+                  <h2 class="text-[32px] leading-[130%]">
+                    Next level of
+                    <span class="text-site-blue">startups</span> and projects
+                  </h2>
+                </div>
+                <div>
+                  <form>
+                    <div id="formContainer" class="relative">
+                      <input
+                        id="emailInput"
+                        type="text"
+                        placeholder="Your email"
+                        name="email"
+                        required
+                        autocomplete="name"
+                        class="w-full rounded-[2rem] border border-gray-400 border-opacity-20 bg-site-lightdark bg-opacity-40 py-4 pr-[90px] ps-6 text-custom-base text-site-white outline-none"
+                      />
+                      <input
+                        id="submitButton"
+                        class="absolute bottom-0 right-0 h-full cursor-pointer rounded-[2rem] bg-gray-700 bg-opacity-30 px-7 py-4 text-custom-base text-site-white"
+                        type="submit"
+                        name="submit"
+                        value="Get It"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--./ content -->
+          </div>
+          <!-- logo  -->
+          <div class="overflow-hidden">
+            <div class="">
+              <ul
+                class="marquee3k flex flex-row justify-start gap-6 text-site-transparent_light_white"
+              >
+                <li class="flex-shrink-0">
+                  <div class="max-w-44 object-fill">
+                    <img
+                      class="w-full"
+                      src="assets/images/logo/logoipsum-286.svg"
+                    />
+                  </div>
+                </li>
+                <li class="flex-shrink-0">
+                  <div class="max-w-44 object-fill">
+                    <img
+                      class="w-full"
+                      src="assets/images/logo/logoipsum-287.svg"
+                    />
+                  </div>
+                </li>
+                <li class="flex-shrink-0">
+                  <div class="max-w-44 object-fill">
+                    <img
+                      class="w-full"
+                      src="assets/images/logo/logoipsum-288.svg"
+                    />
+                  </div>
+                </li>
+                <li class="flex-shrink-0">
+                  <div class="max-w-44 object-fill">
+                    <img
+                      class="w-full"
+                      src="assets/images/logo/logoipsum-311.svg"
+                    />
+                  </div>
+                </li>
+                <li class="flex-shrink-0">
+                  <div class="max-w-44 object-fill">
+                    <img
+                      class="w-full"
+                      src="assets/images/logo/logoipsum-317.svg"
+                    />
+                  </div>
+                </li>
+                <li class="flex-shrink-0">
+                  <div class="max-w-44 object-fill">
+                    <img
+                      class="w-full"
+                      src="assets/images/logo/logoipsum-321.svg"
+                    />
+                  </div>
+                </li>
+                <li class="flex-shrink-0">
+                  <div class="max-w-44 object-fill">
+                    <img
+                      class="w-full"
+                      src="assets/images/logo/logoipsum-325.svg"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--./ logo -->
+        </div>
+      </header>
+
+      <!--./ Header -->
+      <!-- About Us-->
+      <section>
         <div class="flex flex-col gap-6">
           <div>
             <h2 class="section-name">
@@ -75,7 +315,7 @@
       <!-- ./ About Us-->
 
       <!-- Our Service -->
-      <section>
+      <section id="service">
         <div class="flex flex-col gap-6">
           <div>
             <h2 class="section-name">
@@ -228,7 +468,7 @@
       <!--./ Advantages-->
 
       <!-- Testimonial -->
-      <section>
+      <section id="reviews">
         <div class="flex flex-col gap-6">
           <div class="text-center">
             <h2 class="section-name">
@@ -243,75 +483,101 @@
             See what our users tell about us
           </h3>
 
-          <div class="flex flex-row gap-6 overflow-hidden">
-            <!-- card  -->
-            <div class="testimonial-card">
-              <div class="flex flex-row">
-                <div class="h-[48px] w-[48px] rounded-full">
-                  <img
-                    class="w-full rounded-full object-center"
-                    src="assets/images/users/profile.png"
-                  />
+          <div class="testimonial-container">
+            <div class="flex flex-row gap-6">
+              <!-- card  -->
+              <div class="testimonial-card">
+                <div class="flex flex-row">
+                  <div class="h-[48px] w-[48px] rounded-full">
+                    <img
+                      class="w-full rounded-full object-center"
+                      src="assets/images/users/profile.png"
+                    />
+                  </div>
+                  <div class="ps-2 pt-1">
+                    <h3 class="text-custom-md">Sophia</h3>
+                    <h4 class="text-custom-base">Small Business Owner</h4>
+                  </div>
                 </div>
-                <div class="ps-2 pt-1">
-                  <h3 class="text-custom-md">Sophia</h3>
-                  <h4 class="text-custom-base">Small Business Owner</h4>
-                </div>
-              </div>
-              <div>
-                <p class="text-custom-xs font-light">
-                  Launching my online store was a breeze with TheGrowth. I loved
-                  how I could personalize every aspect to match my brand. The
-                  intuitive design meant I could do it all myself without any
-                  tech headaches.
-                </p>
-              </div>
-            </div>
-            <!-- card  -->
-            <div class="testimonial-card">
-              <div class="flex flex-row">
-                <div class="h-[48px] w-[48px] rounded-full">
-                  <img
-                    class="w-full rounded-full object-center"
-                    src="assets/images/users/profile.png"
-                  />
-                </div>
-                <div class="ps-2 pt-1">
-                  <h3 class="text-custom-md">Sophia</h3>
-                  <h4 class="text-custom-base">Small Business Owner</h4>
+                <div>
+                  <p class="text-custom-xs font-light">
+                    Launching my online store was a breeze with TheGrowth. I
+                    loved how I could personalize every aspect to match my
+                    brand. The intuitive design meant I could do it all myself
+                    without any tech headaches.
+                  </p>
                 </div>
               </div>
-              <div>
-                <p class="text-custom-xs font-light">
-                  Launching my online store was a breeze with TheGrowth. I loved
-                  how I could personalize every aspect to match my brand. The
-                  intuitive design meant I could do it all myself without any
-                  tech headaches.
-                </p>
-              </div>
-            </div>
 
-            <!-- card  -->
-            <div class="testimonial-card">
-              <div class="flex flex-row">
-                <div class="h-[48px] w-[48px] rounded-full">
-                  <img
-                    class="w-full rounded-full object-center"
-                    src="assets/images/users/profile.png"
-                  />
+              <!-- card  -->
+              <div class="testimonial-card">
+                <div class="flex flex-row">
+                  <div class="h-[48px] w-[48px] rounded-full">
+                    <img
+                      class="w-full rounded-full object-center"
+                      src="assets/images/users/profile.png"
+                    />
+                  </div>
+                  <div class="ps-2 pt-1">
+                    <h3 class="text-custom-md">Sophia</h3>
+                    <h4 class="text-custom-base">Small Business Owner</h4>
+                  </div>
                 </div>
-                <div class="ps-2 pt-1">
-                  <h3 class="text-custom-md">Sophia</h3>
-                  <h4 class="text-custom-base">Small Business Owner</h4>
+                <div>
+                  <p class="text-custom-xs font-light">
+                    Launching my online store was a breeze with TheGrowth. I
+                    loved how I could personalize every aspect to match my
+                    brand. The intuitive design meant I could do it all myself
+                    without any tech headaches.
+                  </p>
                 </div>
               </div>
-              <div>
-                <p class="text-custom-xs font-light">
-                  Launching my online store was a breeze with TheGrowth. I loved
-                  how I could personalize every aspect to match my brand. The
-                  intuitive design meant I could do it all myself without any
-                  tech headaches.
-                </p>
+
+              <!-- card  -->
+              <div class="testimonial-card">
+                <div class="flex flex-row">
+                  <div class="h-[48px] w-[48px] rounded-full">
+                    <img
+                      class="w-full rounded-full object-center"
+                      src="assets/images/users/profile.png"
+                    />
+                  </div>
+                  <div class="ps-2 pt-1">
+                    <h3 class="text-custom-md">Sophia</h3>
+                    <h4 class="text-custom-base">Small Business Owner</h4>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-custom-xs font-light">
+                    Launching my online store was a breeze with TheGrowth. I
+                    loved how I could personalize every aspect to match my
+                    brand. The intuitive design meant I could do it all myself
+                    without any tech headaches.
+                  </p>
+                </div>
+              </div>
+              <!-- card  -->
+              <div class="testimonial-card">
+                <div class="flex flex-row">
+                  <div class="h-[48px] w-[48px] rounded-full">
+                    <img
+                      class="w-full rounded-full object-center"
+                      src="assets/images/users/profile.png"
+                    />
+                  </div>
+                  <div class="ps-2 pt-1">
+                    <h3 class="text-custom-md">Sophia</h3>
+                    <h4 class="text-custom-base">Small Business Owner</h4>
+                  </div>
+                </div>
+                <div>
+                  <p class="text-custom-xs font-light">
+                    Launching my online store was a breeze with TheGrowth. I
+                    loved how I could personalize every aspect to match my
+                    brand. The intuitive design meant I could do it all myself
+                    without any tech headaches.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -405,7 +671,7 @@
       <!--./ FAQ -->
 
       <!-- Team -->
-      <section>
+      <section id="team">
         <div class="flex flex-col gap-6">
           <div class="text-center">
             <h2 class="section-name capitalize">
@@ -480,9 +746,7 @@
       <!--./ Team -->
     </main>
     <!-- footer -->
-    <footer
-      class="mt-20 rounded-t-[2rem] bg-site-white pb-6 pt-8 text-site-dark"
-    >
+    <footer class="mt-20 rounded-t-[2rem] bg-site-white pt-8 text-site-dark">
       <div class="flex flex-col gap-10">
         <div class="flex flex-col justify-center gap-4">
           <div>
@@ -515,7 +779,8 @@
         </div>
         <div>
           <h2
-            class="overflow-hidden whitespace-nowrap text-[160px] leading-[100%]"
+            data-speed="0.60"
+            class="marquee3k data- overflow-hidden whitespace-nowrap text-[160px] leading-[100%]"
           >
             <a class="block overflow-hidden font-light" href="#"
               >HELLO LET’S TALK SO SAY</a
@@ -530,5 +795,11 @@
     <script src="assets/vendor/fontawesome-free-6.5.1-web/js/all.min.js"></script>
     <!-- aos  -->
     <script src="assets/vendor/aos-master/dist/aos.js"></script>
+
+    <!-- marquee3k  -->
+    <script src="assets/vendor/Marquee3000-master/marquee3k.js"></script>
+
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -58,7 +58,7 @@
   }
 
   .testimonial-card {
-    @apply flex w-[330px] flex-shrink-0 flex-col gap-6 rounded-3xl bg-site-lightdark p-4;
+    @apply flex h-auto w-[330px] flex-shrink-0 flex-col gap-6 rounded-3xl bg-site-lightdark p-4;
   }
 
   .faq-card {
@@ -78,6 +78,12 @@
   }
   .button-primary {
     @apply bg-site-blue text-site-white transition duration-500 hover:bg-opacity-90;
+  }
+  .button-dark {
+    @apply border border-site-transparent_semi_white bg-site-dark text-site-white transition duration-500 hover:bg-site-white hover:bg-opacity-60;
+  }
+  .social-icon {
+    @apply box-border cursor-pointer rounded-2xl border border-site-border_blue bg-site-transparent_blue px-3 py-1 transition-all duration-500 hover:bg-site-blue hover:bg-opacity-50;
   }
 }
 
