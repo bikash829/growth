@@ -1,10 +1,10 @@
 .team__member-card,
 .team__member-card__details {
-  transition: all 200ms linear 200ms;
+  transition: 1000ms cubic-bezier(0, 0, 0, 1);
 }
 
 .team__member-card:hover {
-  box-shadow: 0 0 5px rgba(67, 67, 237, 0.2);
+  box-shadow: 0 0 15px rgba(67, 67, 237, 0.2);
 }
 .team__member-card:hover > .team__member-card__details {
   background-color: rgba(67, 67, 237, 0.2);
