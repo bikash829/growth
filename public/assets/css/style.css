@@ -270,3 +270,8 @@
 .service-bottom-border {
   transition: transform 0.2s linear;
 }
+
+/* faq transition  */
+.faq-arrow {
+  transition: transform 0.2s linear;
+}

@@ -61,7 +61,7 @@ function addAnimation() {
 
 //<-- scroll marquee animation
 
-//<-- service toggle
+// service toggle --->
 $(document).ready(function () {
   // $("#toggle-arrow").click(function() {
   //   var container = $("#service-container");
@@ -111,3 +111,19 @@ $(document).ready(function () {
     serviceParagraph.slideToggle(200);
   });
 });
+
+// <-- Service toggle
+
+// FAQ toggle -->
+$(document).ready(function () {
+  $(".faq-toggle").click(function () {
+    const faqPlus = $(this).find(".faq-arrow");
+    const faqParagraph = $(this).siblings(".faq-paragraph");
+    $(faqParagraph).toggle(400, "linear", function () {
+      faqParagraph.toggleClass("hidden");
+    });
+    faqPlus.toggleClass("rotate-45");
+  });
+});
+
+// <-- FAQ toggle

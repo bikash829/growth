@@ -62,7 +62,7 @@
   }
 
   .faq-card {
-    @apply rounded-xl border border-site-transparent_semi_white bg-site-lightdark bg-opacity-80 px-6 py-5;
+    @apply flex flex-col gap-3 rounded-xl border border-site-transparent_semi_white bg-site-lightdark bg-opacity-80 px-6 py-5;
   }
   .faq-card-header {
     @apply cursor-pointer font-Inter text-custom-lg font-medium leading-[120%];
