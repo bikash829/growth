@@ -224,8 +224,6 @@
     transparent
   );
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-
-  /* mask: linier-gradient(90deg, transparent, white 20%); */
 }
 
 .scroller[data-animated="true"] .scroller__inner {
@@ -247,7 +245,7 @@
   to {
     transform: translateX(
       calc(-50% - 0.75rem)
-    ); /* 0.5rem is the gap which is half size of main gap*/
+    ); /* 0.75rem is the gap which is half size of main gap*/
   }
 }
 /*<--- marquee animation  */
@@ -255,12 +253,6 @@
 /* service transition  */
 .service-container {
   transition: all 0.2s linear;
-}
-
-.service-paragraph {
-  /* max-height: auto; */
-  /* overflow: hidden; */
-  /* transition: max-height 0.5s ease; */
 }
 
 .service-arrow {
@@ -274,4 +266,15 @@
 /* faq transition  */
 .faq-arrow {
   transition: transform 0.2s linear;
+}
+
+.right-mask {
+  -webkit-mask: linear-gradient(
+    270deg,
+    transparent,
+    white 120%,
+    white 0%,
+    transparent
+  );
+  mask: linear-gradient(270deg, transparent, white 110%, white 0%, transparent);
 }
