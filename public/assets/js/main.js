@@ -119,7 +119,7 @@ $(document).ready(function () {
   $(".faq-toggle").click(function () {
     const faqPlus = $(this).find(".faq-arrow");
     const faqParagraph = $(this).siblings(".faq-paragraph");
-    $(faqParagraph).toggle(400, "linear", function () {
+    $(faqParagraph).toggle(200, "linear", function () {
       faqParagraph.toggleClass("hidden");
     });
     faqPlus.toggleClass("rotate-45");
