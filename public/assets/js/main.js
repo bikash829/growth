@@ -97,6 +97,7 @@ $(document).ready(function () {
       serviceArrow.removeClass("rotate-90");
       serviceArrow.addClass("rotate-45");
       // serviceParagraph.addClass("hidden");
+      serviceBorder.addClass("border-b-2");
     } else {
       // If the container is minimized, extend it
       parentContainer.addClass(
@@ -104,9 +105,9 @@ $(document).ready(function () {
       );
       serviceArrow.addClass("rotate-90");
       serviceArrow.removeClass("rotate-45");
+      serviceBorder.removeClass("border-b-2");
       // serviceParagraph.removeClass("hidden");
     }
     serviceParagraph.slideToggle(200);
-    serviceBorder.slideToggle(200);
   });
 });
