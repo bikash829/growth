@@ -251,3 +251,18 @@
   }
 }
 /*<--- marquee animation  */
+
+/* service transition  */
+.service-container {
+  transition: all 0.2s linear;
+}
+
+.service-paragraph {
+  /* max-height: auto; */
+  /* overflow: hidden; */
+  /* transition: max-height 0.5s ease; */
+}
+
+.service-arrow {
+  transition: transform 0.2s linear;
+}

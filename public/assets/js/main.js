@@ -54,9 +54,59 @@ function addAnimation() {
       const duplicatedItem = $(content).clone(true);
       duplicatedItem.attr("area-hidden", true);
       scrollerInner.append(duplicatedItem);
-      console.log(duplicatedItem);
+      // console.log(duplicatedItem);
     });
   });
 }
 
 //<-- scroll marquee animation
+
+//<-- service toggle
+$(document).ready(function () {
+  // $("#toggle-arrow").click(function() {
+  //   var container = $("#service-container");
+  //   var arrow = $("#toggle-arrow");
+
+  //   if (container.hasClass("rounded-xl")) {
+  //     // If the container is extended, minimize it
+  //     container.removeClass("rounded-xl bg-gradient-to-r from-site-border_blue p-4");
+  //     container.addClass("gap-3");
+  //     arrow.removeClass("rotate-90");
+  //     arrow.addClass("rotate-45");
+  //   } else {
+  //     // If the container is minimized, extend it
+  //     container.addClass("rounded-xl bg-gradient-to-r from-site-border_blue p-4");
+  //     container.removeClass("gap-3");
+  //     arrow.addClass("rotate-90");
+  //     arrow.removeClass("rotate-45");
+  //   }
+  // });
+  // $(".toggle-arrow").click(function () {
+  //   console.log($(this).closet(".service-container"));
+  // });
+  $(".toggle-service").click(function () {
+    const parentContainer = $(this).closest(".service-container");
+    const serviceArrow = parentContainer.find(".service-arrow");
+    const serviceParagraph = parentContainer.find(".service-paragraph");
+    const serviceBorder = parentContainer.find(".service-bottom-border");
+    if (parentContainer.hasClass("rounded-xl")) {
+      // If the container is extended, minimize it
+      parentContainer.removeClass(
+        "rounded-xl bg-gradient-to-r from-site-border_blue px-4 pt-4",
+      );
+      serviceArrow.removeClass("rotate-90");
+      serviceArrow.addClass("rotate-45");
+      // serviceParagraph.addClass("hidden");
+    } else {
+      // If the container is minimized, extend it
+      parentContainer.addClass(
+        "rounded-xl bg-gradient-to-r from-site-border_blue px-4 pt-4",
+      );
+      serviceArrow.addClass("rotate-90");
+      serviceArrow.removeClass("rotate-45");
+      // serviceParagraph.removeClass("hidden");
+    }
+    serviceParagraph.slideToggle(200);
+    serviceBorder.slideToggle(200);
+  });
+});
