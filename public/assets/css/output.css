@@ -815,10 +815,6 @@ section{
   position: relative;
 }
 
-.inset-0{
-  inset: 0px;
-}
-
 .bottom-0{
   bottom: 0px;
 }
@@ -940,18 +936,6 @@ section{
   height: 100%;
 }
 
-.h-\[50vw\]{
-  height: 50vw;
-}
-
-.h-\[100\%\]{
-  height: 100%;
-}
-
-.max-h-\[388px\]{
-  max-height: 388px;
-}
-
 .w-\[100px\]{
   width: 100px;
 }
@@ -988,20 +972,8 @@ section{
   width: 100%;
 }
 
-.w-\[50vw\]{
-  width: 50vw;
-}
-
-.w-\[100\%\]{
-  width: 100%;
-}
-
 .max-w-44{
   max-width: 11rem;
-}
-
-.max-w-\[388px\]{
-  max-width: 388px;
 }
 
 .flex-shrink-0{
@@ -1061,10 +1033,6 @@ section{
 
 .flex-col{
   flex-direction: column;
-}
-
-.place-content-center{
-  place-content: center;
 }
 
 .content-center{
@@ -1267,11 +1235,6 @@ section{
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.object-cover{
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .object-fill{
   -o-object-fit: fill;
      object-fit: fill;
@@ -1369,6 +1332,10 @@ section{
 
 .text-end{
   text-align: end;
+}
+
+.align-baseline{
+  vertical-align: baseline;
 }
 
 .font-Inter{
