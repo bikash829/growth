@@ -20,11 +20,11 @@
     <script src="assets/vendor/jquery/jquery-3.7.1.min.js"></script>
   </head>
   <body class="bg-site-dark font-Poppins">
-    <main class="container flex flex-col gap-20 pt-5 text-site-white">
+    <main class="flex flex-col gap-20 pt-5 text-site-white">
       <!-- Header -->
       <header class="flex flex-col gap-10" id="home">
         <!-- navigation menu  -->
-        <nav id="nav" class="flex flex-col gap-6">
+        <nav id="nav" class="container flex flex-col gap-6">
           <div class="flex flex-row justify-between">
             <div>
               <button
@@ -118,44 +118,31 @@
         </nav>
 
         <!-- banner  -->
-        <div class="banner flex flex-col gap-[120px]">
+        <div class="banner flex w-full flex-col gap-[120px] justify-center items-center">
           <!-- Header content -->
-          <div class="relative mx-auto h-[388px] w-[388px]">
-            <!-- The circle  -->
-            <div
-              class="main-gradient-circle absolute z-30 mx-auto h-[388px] w-[388px] rounded-full border border-site-border_blue border-opacity-30 bg-slate-600"
-              data-aos="zoom-in"
-            ></div>
-            <!-- top left rectangle  -->
-            <div
-              class="absolute left-0 top-0 z-20 h-[268px] w-[194px] bg-transparent"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <div class="relative h-full w-full overflow-hidden">
-                <div
-                  class="main-gradient-circle absolute left-0 top-0 z-10 h-[350px] w-[268px]"
-                ></div>
+          <div class="relative h-[388px] w-[388px]">
+              <!-- The circle  -->
+              <div class="main-gradient-circle absolute z-30 h-[388px] w-[388px] rounded-full border border-site-border_blue border-opacity-30 bg-slate-600" data-aos="zoom-in"></div>
+              <!-- top left rectangle  -->
+              <div class="absolute left-0 top-0 z-20 h-[268px] w-[194px] bg-transparent" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="relative h-full w-full overflow-hidden">
+                      <div class="main-gradient-circle absolute left-0 top-0 z-10 h-[350px] w-[268px]"></div>
+                  </div>
               </div>
-            </div>
-            <!-- bottom right rectangle -->
-            <div
-              class="absolute bottom-0 right-0 h-[100px] w-[100px]"
-              data-aos="zoom-in"
-              data-aos-duration="1000"
-            >
-              <div class="relative h-full w-full overflow-hidden">
-                <div
-                  class="main-gradient-circle absolute bottom-0 right-0 z-20 h-[150px] w-[150px] bg-opacity-50"
-                ></div>
+              <!-- bottom right rectangle -->
+              <div class="absolute bottom-0 right-0 h-[100px] w-[100px]" data-aos="zoom-in" data-aos-duration="1000">
+                  <div class="relative h-full w-full overflow-hidden">
+                      <div class="main-gradient-circle absolute bottom-0 right-0 z-20 h-[150px] w-[150px] bg-opacity-50"></div>
+                  </div>
               </div>
-            </div>
-            <div
-              class="main-gradient-circle big-rectangle absolute bottom-0 right-0 z-10 h-[164px] w-[164px] bg-opacity-20"
-            ></div>
-            <!--./ bottom right rectangle -->
-            <!-- content  -->
-            <div
+              <div  class="main-gradient-circle big-rectangle absolute bottom-0 right-0 z-0 h-[164px] w-[164px] bg-opacity-20" ></div>
+              <!--./ bottom right rectangle -->
+          </div>
+      </div>
+      
+
+          <!-- content  -->
+          <!-- <div
               class="absolute z-40 flex h-full w-full flex-col justify-center text-center"
             >
               <div class="flex flex-col gap-7">
@@ -206,9 +193,8 @@
                   </form>
                 </div>
               </div>
-            </div>
-            <!--./ content -->
-          </div>
+            </div> -->
+          <!--./ content -->
           <!-- logo  -->
           <div class="overflow-hidden">
             <div class="scroller" data-direction="right">
@@ -280,7 +266,7 @@
       <!--./ Header -->
 
       <!-- About Us-->
-      <section>
+      <section class="container">
         <div class="flex flex-col gap-6">
           <div>
             <h2 class="section-name" data-aos="zoom-in">
