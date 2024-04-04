@@ -48,10 +48,12 @@
           <!-- navigation menu  -->
           <div
             id="navMenu"
-            class="nav-container hidden flex-col gap-9 rounded-2xl border border-gray-700 py-10 text-custom-2xl text-site-transparent_light_white"
+            class="nav-container hidden flex-col gap-9 rounded-2xl border border-gray-700 py-10 text-custom-2xl text-site-transparent_light_white md:flex-row md:justify-between md:px-10"
           >
             <!-- Menu  -->
-            <ul class="flex flex-col justify-center gap-6 text-center">
+            <ul
+              class="flex flex-col justify-center gap-6 text-center md:text-start"
+            >
               <li>
                 <a
                   href="#home"
@@ -82,7 +84,9 @@
               </li>
             </ul>
             <!-- Social Icons  -->
-            <div class="grid grid-cols-2 gap-6 text-custom-xl text-white">
+            <div
+              class="grid grid-cols-2 gap-6 text-custom-xl text-white md:gap-9"
+            >
               <div class="text-right">
                 <div class="social-icon inline-block">
                   <a href="linkdin.com"
@@ -105,13 +109,13 @@
                   <a href="#"><i class="fa-brands fa-behance"></i></a>
                 </div>
               </div>
-            </div>
-            <div class="text-center text-white">
-              <button
-                class="button border border-site-border_blue bg-site-blue bg-opacity-20 transition duration-1000 hover:bg-opacity-60"
-              >
-                Get Free Template
-              </button>
+              <div class="col-span-2 text-center text-white">
+                <button
+                  class="button border border-site-border_blue bg-site-blue bg-opacity-20 transition duration-1000 hover:bg-opacity-60"
+                >
+                  Get Free Template
+                </button>
+              </div>
             </div>
           </div>
           <!--./ navigation menu -->
@@ -173,7 +177,9 @@
                   data-aos-easing="ease-in-sine"
                   data-aos-duration="500"
                 >
-                  <p class="text-center text-custom-base leading-4">
+                  <p
+                    class="text-center text-custom-base leading-4 md:text-custom-sm"
+                  >
                     An absolutely free landing made specifically for helping you
                     to launch your first MVP
                   </p>

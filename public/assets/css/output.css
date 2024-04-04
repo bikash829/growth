@@ -861,6 +861,10 @@ section{
   z-index: 40;
 }
 
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1719,6 +1723,11 @@ section{
     gap: 2.25rem;
   }
 
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:text-start{
     text-align: start;
   }
@@ -1733,6 +1742,10 @@ section{
 
   .md\:text-\[56px\]{
     font-size: 56px;
+  }
+
+  .md\:text-custom-sm{
+    font-size: 0.875rem;
   }
 }
 
