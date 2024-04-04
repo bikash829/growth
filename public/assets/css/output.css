@@ -1006,6 +1006,10 @@ section{
   flex-grow: 1;
 }
 
+.basis-1\/2{
+  flex-basis: 50%;
+}
+
 .basis-10\/12{
   flex-basis: 83.333333%;
 }
@@ -1063,10 +1067,6 @@ section{
 
 .content-between{
   align-content: space-between;
-}
-
-.items-start{
-  align-items: flex-start;
 }
 
 .items-center{
@@ -1586,49 +1586,137 @@ section{
 }
 
 @media (min-width: 768px){
+  .md\:z-0{
+    z-index: 0;
+  }
+
+  .md\:z-20{
+    z-index: 20;
+  }
+
   .md\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .md\:block{
+    display: block;
   }
 
   .md\:inline{
     display: inline;
   }
 
+  .md\:h-\[170px\]{
+    height: 170px;
+  }
+
+  .md\:h-\[282px\]{
+    height: 282px;
+  }
+
+  .md\:h-\[464px\]{
+    height: 464px;
+  }
+
+  .md\:h-\[200px\]{
+    height: 200px;
+  }
+
+  .md\:h-\[300px\]{
+    height: 300px;
+  }
+
+  .md\:h-0{
+    height: 0px;
+  }
+
+  .md\:h-\[188px\]{
+    height: 188px;
+  }
+
+  .md\:h-\[172px\]{
+    height: 172px;
+  }
+
+  .md\:h-\[240px\]{
+    height: 240px;
+  }
+
+  .md\:w-\[170px\]{
+    width: 170px;
+  }
+
+  .md\:w-\[232px\]{
+    width: 232px;
+  }
+
+  .md\:w-\[43vw\]{
+    width: 43vw;
+  }
+
+  .md\:w-\[464px\]{
+    width: 464px;
+  }
+
   .md\:w-\[50vw\]{
     width: 50vw;
   }
 
-  .md\:w-1\/2{
-    width: 50%;
+  .md\:w-\[200px\]{
+    width: 200px;
+  }
+
+  .md\:w-\[300px\]{
+    width: 300px;
+  }
+
+  .md\:w-0{
+    width: 0px;
+  }
+
+  .md\:w-\[188px\]{
+    width: 188px;
+  }
+
+  .md\:w-\[172px\]{
+    width: 172px;
+  }
+
+  .md\:w-\[240px\]{
+    width: 240px;
+  }
+
+  .md\:w-\[40vw\]{
+    width: 40vw;
+  }
+
+  .md\:w-\[40\%\]{
+    width: 40%;
   }
 
   .md\:basis-4\/12{
     flex-basis: 33.333333%;
   }
 
-  .md\:basis-8\/12{
-    flex-basis: 66.666667%;
-  }
-
-  .md\:basis-1\/2{
-    flex-basis: 50%;
-  }
-
   .md\:basis-6\/12{
     flex-basis: 50%;
+  }
+
+  .md\:basis-8\/12{
+    flex-basis: 66.666667%;
   }
 
   .md\:flex-row{
     flex-direction: row;
   }
 
-  .md\:justify-normal{
-    justify-content: normal;
-  }
-
   .md\:justify-between{
     justify-content: space-between;
+  }
+
+  .md\:gap-9{
+    gap: 2.25rem;
   }
 
   .md\:text-start{
@@ -1641,6 +1729,10 @@ section{
 
   .md\:text-custom-md{
     font-size: 1rem;
+  }
+
+  .md\:text-\[56px\]{
+    font-size: 56px;
   }
 }
 
