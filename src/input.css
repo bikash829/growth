@@ -68,7 +68,7 @@
     @apply cursor-pointer font-Inter text-custom-lg font-medium leading-[120%];
   }
   .team-card {
-    @apply cursor-pointer rounded-3xl border border-site-transparent_semi_white hover:border-site-blue;
+    @apply cursor-pointer rounded-3xl border border-site-transparent_semi_white hover:border-site-blue md:basis-4/12;
   }
   .team-card-details {
     @apply rounded-b-3xl bg-site-lightdark py-4 text-center;
