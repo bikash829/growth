@@ -630,6 +630,12 @@ section{
   background-color: rgba(40, 40, 40, var(--tw-bg-opacity));
 }
 
+@media (min-width: 768px){
+  .card-sm{
+    flex-basis: 33.333333%;
+  }
+}
+
 .section-title{
   font-weight: 300;
   line-height: 1;
@@ -1567,4 +1573,34 @@ section{
 
 .hover\:underline:hover{
   text-decoration-line: underline;
+}
+
+@media (min-width: 768px){
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:text-\[52px\]{
+    font-size: 52px;
+  }
+
+  .md\:text-custom-md{
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:w-\[60vw\]{
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:block{
+    display: block;
+  }
 }

@@ -50,7 +50,7 @@
     @apply inline-block rounded-lg border border-site-transparent_white bg-site-lightdark px-12 py-1 text-center font-Poppins text-custom-xl font-light;
   }
   .card-sm {
-    @apply flex flex-col gap-[7px] rounded-3xl border border-site-transparent_semi_white bg-site-lightdark py-7 leading-none hover:bg-site-lightdark_brighter;
+    @apply flex flex-col gap-[7px] rounded-3xl border border-site-transparent_semi_white bg-site-lightdark py-7 leading-none hover:bg-site-lightdark_brighter md:basis-4/12;
   }
 
   .section-title {
