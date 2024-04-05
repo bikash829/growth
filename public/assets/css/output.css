@@ -693,6 +693,12 @@ section{
   background-color: rgba(67, 67, 237, 0.2);
 }
 
+@media (min-width: 768px){
+  .testimonial-card{
+    width: 384px;
+  }
+}
+
 .faq-card{
   display: flex;
   flex-direction: column;
@@ -1003,12 +1009,12 @@ section{
   width: 150px;
 }
 
-.w-\[160px\]{
-  width: 160px;
-}
-
 .w-\[164px\]{
   width: 164px;
+}
+
+.w-\[175px\]{
+  width: 175px;
 }
 
 .w-\[194px\]{
@@ -1033,14 +1039,6 @@ section{
 
 .w-full{
   width: 100%;
-}
-
-.w-\[120px\]{
-  width: 120px;
-}
-
-.w-\[175px\]{
-  width: 175px;
 }
 
 .max-w-44{
@@ -1641,10 +1639,6 @@ section{
 }
 
 @media (min-width: 768px){
-  .md\:visible{
-    visibility: visible;
-  }
-
   .md\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -1730,6 +1724,10 @@ section{
     justify-content: space-between;
   }
 
+  .md\:gap-6{
+    gap: 1.5rem;
+  }
+
   .md\:gap-9{
     gap: 2.25rem;
   }
@@ -1740,10 +1738,6 @@ section{
 
   .md\:gap-\[30px\]{
     gap: 30px;
-  }
-
-  .md\:gap-6{
-    gap: 1.5rem;
   }
 
   .md\:px-10{
@@ -1771,10 +1765,6 @@ section{
     font-size: 0.875rem;
   }
 
-  .md\:text-\[30px\]{
-    font-size: 30px;
-  }
-
   .md\:text-custom-xl{
     font-size: 1.5rem;
   }
@@ -1800,28 +1790,12 @@ section{
     display: block;
   }
 
-  .xl\:w-\[60vw\]{
-    width: 60vw;
-  }
-
   .xl\:w-\[50vw\]{
     width: 50vw;
   }
 
   .xl\:w-\[55vw\]{
     width: 55vw;
-  }
-
-  .xl\:w-\[175px\]{
-    width: 175px;
-  }
-
-  .xl\:w-\[120px\]{
-    width: 120px;
-  }
-
-  .xl\:basis-1\/2{
-    flex-basis: 50%;
   }
 
   .xl\:basis-5\/12{
@@ -1836,42 +1810,20 @@ section{
     flex-direction: row;
   }
 
-  .xl\:content-center{
-    align-content: center;
-  }
-
-  .xl\:items-center{
-    align-items: center;
+  .xl\:gap-10{
+    gap: 2.5rem;
   }
 
   .xl\:gap-12{
     gap: 3rem;
   }
 
-  .xl\:gap-\[180px\]{
-    gap: 180px;
-  }
-
-  .xl\:gap-10{
-    gap: 2.5rem;
-  }
-
   .xl\:gap-9{
     gap: 2.25rem;
   }
 
-  .xl\:self-center{
-    align-self: center;
-  }
-
-  .xl\:px-72{
-    padding-left: 18rem;
-    padding-right: 18rem;
-  }
-
-  .xl\:py-64{
-    padding-top: 16rem;
-    padding-bottom: 16rem;
+  .xl\:gap-\[180px\]{
+    gap: 180px;
   }
 
   .xl\:px-\[72px\]{
@@ -1884,43 +1836,47 @@ section{
     padding-bottom: 64px;
   }
 
-  .xl\:align-middle{
-    vertical-align: middle;
+  .xl\:text-\[12px\]{
+    font-size: 12px;
   }
 
-  .xl\:text-\[70px\]{
-    font-size: 70px;
+  .xl\:text-\[14px\]{
+    font-size: 14px;
   }
 
-  .xl\:text-custom-sm{
-    font-size: 0.875rem;
-  }
-
-  .xl\:text-custom-base{
-    font-size: 0.75rem;
-  }
-
-  .xl\:text-\[54px\]{
-    font-size: 54px;
-  }
-
-  .xl\:text-custom-xl{
-    font-size: 1.5rem;
+  .xl\:text-\[20px\]{
+    font-size: 20px;
   }
 
   .xl\:text-\[40px\]{
     font-size: 40px;
   }
 
-  .xl\:text-custom-lg{
-    font-size: 1.125rem;
-  }
-
   .xl\:text-\[52px\]{
     font-size: 52px;
   }
 
+  .xl\:text-\[54px\]{
+    font-size: 54px;
+  }
+
+  .xl\:text-\[70px\]{
+    font-size: 70px;
+  }
+
+  .xl\:text-custom-lg{
+    font-size: 1.125rem;
+  }
+
   .xl\:text-custom-md{
     font-size: 1rem;
+  }
+
+  .xl\:text-custom-sm{
+    font-size: 0.875rem;
+  }
+
+  .xl\:text-custom-xl{
+    font-size: 1.5rem;
   }
 }

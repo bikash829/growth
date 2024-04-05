@@ -61,7 +61,7 @@
   }
 
   .testimonial-card {
-    @apply flex h-auto w-[330px] flex-shrink-0 flex-col gap-6 rounded-3xl border border-gray-500 border-opacity-40 bg-site-lightdark p-4 hover:bg-site-transparent_blue;
+    @apply flex h-auto w-[330px] flex-shrink-0 flex-col gap-6 rounded-3xl border border-gray-500 border-opacity-40 bg-site-lightdark p-4 hover:bg-site-transparent_blue md:w-[384px];
   }
 
   .faq-card {
