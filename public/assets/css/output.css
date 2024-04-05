@@ -887,6 +887,10 @@ section{
   top: 50%;
 }
 
+.right-10{
+  right: 2.5rem;
+}
+
 .z-0{
   z-index: 0;
 }

@@ -301,3 +301,18 @@
   );
   mask: linear-gradient(270deg, transparent, white 110%, white 0%, transparent);
 }
+
+/* footer  */
+#backToTop {
+  top: 60%;
+  right: -10%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  #backToTop {
+    top: 60%;
+    left: -10%;
+    transform: translate(-50%, -50%);
+  }
+}
