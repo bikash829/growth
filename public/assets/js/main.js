@@ -103,6 +103,26 @@ $(document).ready(function () {
 
 // <-- FAQ toggle
 
+// bubble effect
+$(document).ready(function () {
+  $("#leftBubble").hover(
+    function () {
+      $(this).css("transform", "translate(-50%, -50%) scale(1.1)");
+    },
+    function () {
+      $(this).css("transform", "translate(-50%, -50%) scale(1)");
+    },
+  );
+  $("#rightBubble").hover(
+    function () {
+      $(this).css("transform", "translate(50%, -50%) scale(1.1)");
+    },
+    function () {
+      $(this).css("transform", "translate(50%, -50%) scale(1)");
+    },
+  );
+});
+
 // marquee initialized
 $(document).ready(function () {
   Marquee3k.init();
