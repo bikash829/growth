@@ -897,6 +897,10 @@ section{
   grid-column: span 2 / span 2;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1029,6 +1033,14 @@ section{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[120px\]{
+  width: 120px;
+}
+
+.w-\[175px\]{
+  width: 175px;
 }
 
 .max-w-44{
@@ -1788,6 +1800,26 @@ section{
     display: block;
   }
 
+  .xl\:w-\[60vw\]{
+    width: 60vw;
+  }
+
+  .xl\:w-\[50vw\]{
+    width: 50vw;
+  }
+
+  .xl\:w-\[55vw\]{
+    width: 55vw;
+  }
+
+  .xl\:w-\[175px\]{
+    width: 175px;
+  }
+
+  .xl\:w-\[120px\]{
+    width: 120px;
+  }
+
   .xl\:basis-1\/2{
     flex-basis: 50%;
   }
@@ -1824,8 +1856,32 @@ section{
     gap: 2.5rem;
   }
 
+  .xl\:gap-9{
+    gap: 2.25rem;
+  }
+
   .xl\:self-center{
     align-self: center;
+  }
+
+  .xl\:px-72{
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+
+  .xl\:py-64{
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .xl\:px-\[72px\]{
+    padding-left: 72px;
+    padding-right: 72px;
+  }
+
+  .xl\:py-\[64px\]{
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .xl\:align-middle{
@@ -1854,5 +1910,17 @@ section{
 
   .xl\:text-\[40px\]{
     font-size: 40px;
+  }
+
+  .xl\:text-custom-lg{
+    font-size: 1.125rem;
+  }
+
+  .xl\:text-\[52px\]{
+    font-size: 52px;
+  }
+
+  .xl\:text-custom-md{
+    font-size: 1rem;
   }
 }
