@@ -393,7 +393,7 @@
 
       <!-- Our Service -->
       <section id="service" class="container">
-        <div class="flex flex-col gap-6 lg:gap-8 xl:gap-12">
+        <div class="gap-as-section">
           <div>
             <h2
               class="section-name"
@@ -408,30 +408,32 @@
             </h2>
           </div>
 
-          <h3
-            class="section-title right-mask text-custom-4xl md:text-[52px]"
-            data-aos="fade"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
-          >
-            Who we are and what we offer
-          </h3>
+          <div class="gap-as-section xl:flex-row">
+            <h3
+              class="section-title right-mask text-custom-4xl md:text-[52px] xl:my-auto xl:basis-7/12 xl:text-[70px]"
+              data-aos="fade"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+            >
+              Who we are and what we offer
+            </h3>
 
-          <p
-            class="font-Inter text-custom-sm font-light md:text-custom-md"
-            data-aos="fade"
-            data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
-          >
-            We provide cutting-edge Framer templates designed specifically for
-            startups and small-medium sized businesses. Our templates are built
-            to enhance user experience and drive conversions.
-          </p>
+            <p
+              class="font-Inter text-custom-sm font-light md:text-custom-md xl:my-auto xl:basis-5/12 xl:text-custom-sm"
+              data-aos="fade"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="600"
+            >
+              We’re a team focused on making your startup journey easier. Our
+              services are designed to help you create an impressive MVP quickly
+              and efficiently. Here’s what we offer
+            </p>
+          </div>
         </div>
 
         <!-- services  -->
         <div
-          class="flex flex-col gap-4"
+          class="flex flex-col gap-4 md:gap-6 xl:gap-10"
           class="font-Inter text-custom-sm font-light"
           data-aos="fade"
           data-aos-easing="ease-in-sine"
@@ -441,18 +443,29 @@
           <div class="service-container flex flex-col gap-3">
             <div class="toggle-service flex cursor-pointer justify-between">
               <div class="basis-10/12 text-custom-lg">
-                <h3 class="">Templates</h3>
+                <div class="flex justify-between">
+                  <h3
+                    class="hidden md:block md:basis-8/12 md:text-custom-xl xl:text-[54px]"
+                  >
+                    01
+                  </h3>
+                  <h3
+                    class="my-auto text-[20px] md:basis-4/12 xl:text-custom-xl"
+                  >
+                    Templates
+                  </h3>
+                </div>
               </div>
               <div class="basis-2/12 content-end text-end">
                 <span
-                  class="service-arrow inline-block rotate-45 transform text-custom-xl"
+                  class="service-arrow inline-block rotate-45 transform text-custom-xl xl:text-[40px]"
                 >
                   <i class="fa-solid fa-arrow-up-long"></i>
                 </span>
               </div>
             </div>
             <div class="service-paragraph hidden pb-4">
-              <p>
+              <p class="md:text-custom-md xl:text-custom-xl">
                 Choose from a variety of templates that make building your site
                 a breeze. Our designs are flexible and user-friendly, so you can
                 create a professional-looking project in no time
@@ -463,22 +476,34 @@
             ></div>
           </div>
 
+          <!-- from here  -->
           <!-- service cards -->
           <div class="service-container flex flex-col gap-3">
             <div class="toggle-service flex cursor-pointer justify-between">
               <div class="basis-10/12 text-custom-lg">
-                <h3 class="">UI/UX</h3>
+                <div class="flex justify-between">
+                  <h3
+                    class="hidden md:block md:basis-8/12 md:text-custom-xl xl:text-[54px]"
+                  >
+                    02
+                  </h3>
+                  <h3
+                    class="my-auto text-[20px] md:basis-4/12 xl:text-custom-xl"
+                  >
+                    UI/UX
+                  </h3>
+                </div>
               </div>
               <div class="basis-2/12 content-end text-end">
                 <span
-                  class="service-arrow inline-block rotate-45 transform text-custom-xl"
+                  class="service-arrow inline-block rotate-45 transform text-custom-xl xl:text-[40px]"
                 >
                   <i class="fa-solid fa-arrow-up-long"></i>
                 </span>
               </div>
             </div>
             <div class="service-paragraph hidden pb-4">
-              <p>
+              <p class="md:text-custom-md xl:text-custom-xl">
                 Good design means a better user experience. We help you design a
                 site that’s not only good to look at but also easy and enjoyable
                 to use, keeping your audience engaged
@@ -493,18 +518,29 @@
           <div class="service-container flex flex-col gap-3">
             <div class="toggle-service flex cursor-pointer justify-between">
               <div class="basis-10/12 text-custom-lg">
-                <h3 class="">Framer Development</h3>
+                <div class="flex justify-between">
+                  <h3
+                    class="hidden md:block md:basis-8/12 md:text-custom-xl xl:text-[54px]"
+                  >
+                    03
+                  </h3>
+                  <h3
+                    class="my-auto text-[20px] md:basis-4/12 xl:text-custom-xl"
+                  >
+                    Framer Development
+                  </h3>
+                </div>
               </div>
               <div class="basis-2/12 content-end text-end">
                 <span
-                  class="service-arrow inline-block rotate-45 transform text-custom-xl"
+                  class="service-arrow inline-block rotate-45 transform text-custom-xl xl:text-[40px]"
                 >
                   <i class="fa-solid fa-arrow-up-long"></i>
                 </span>
               </div>
             </div>
             <div class="service-paragraph hidden pb-4">
-              <p>
+              <p class="md:text-custom-md xl:text-custom-xl">
                 Our Framer development service brings your ideas to life with
                 interactive and responsive designs. Whether it's a complex
                 animation or a dynamic user interface, we’ve got you covered
@@ -519,18 +555,29 @@
           <div class="service-container flex flex-col gap-3">
             <div class="toggle-service flex cursor-pointer justify-between">
               <div class="basis-10/12 text-custom-lg">
-                <h3 class="">Mobile Adaptivity</h3>
+                <div class="flex justify-between">
+                  <h3
+                    class="hidden md:block md:basis-8/12 md:text-custom-xl xl:text-[54px]"
+                  >
+                    04
+                  </h3>
+                  <h3
+                    class="my-auto text-[20px] md:basis-4/12 xl:text-custom-xl"
+                  >
+                    Mobile Adaptivity
+                  </h3>
+                </div>
               </div>
               <div class="basis-2/12 content-end text-end">
                 <span
-                  class="service-arrow inline-block rotate-45 transform text-custom-xl"
+                  class="service-arrow inline-block rotate-45 transform text-custom-xl xl:text-[40px]"
                 >
                   <i class="fa-solid fa-arrow-up-long"></i>
                 </span>
               </div>
             </div>
             <div class="service-paragraph hidden pb-4">
-              <p>
+              <p class="md:text-custom-md xl:text-custom-xl">
                 Our Framer development service brings your ideas to life with
                 interactive and responsive designs. Whether it's a complex
                 animation or a dynamic user interface, we’ve got you covered
@@ -540,49 +587,6 @@
               class="service-bottom-border border-b-2 border-site-transparent_light_white"
             ></div>
           </div>
-
-          <!-- 
-          <div class="flex flex-col gap-3">
-            <div class="flex cursor-pointer justify-between">
-              <div class="basis-10/12 text-custom-lg">
-                <h3 class="">UI/UX</h3>
-              </div>
-              <div class="basis-2/12 content-end text-end">
-                <span class="inline-block rotate-45 transform text-custom-xl">
-                  <i class="fa-solid fa-arrow-up-long"></i>
-                </span>
-              </div>
-            </div>
-            <div class="border-b-2 border-site-transparent_light_white"></div>
-          </div>
-
-          <div class="flex flex-col gap-3">
-            <div class="flex cursor-pointer justify-between">
-              <div class="basis-10/12 text-custom-lg">
-                <h3 class="">Framer Development</h3>
-              </div>
-              <div class="basis-2/12 content-end text-end">
-                <span class="inline-block rotate-45 transform text-custom-xl">
-                  <i class="fa-solid fa-arrow-up-long"></i>
-                </span>
-              </div>
-            </div>
-            <div class="border-b-2 border-site-transparent_light_white"></div>
-          </div>
-
-          <div class="flex flex-col gap-3">
-            <div class="flex cursor-pointer justify-between">
-              <div class="basis-10/12 text-custom-lg">
-                <h3 class="">Mobile Adaptivity</h3>
-              </div>
-              <div class="basis-2/12 content-end text-end">
-                <span class="inline-block rotate-45 transform text-custom-xl">
-                  <i class="fa-solid fa-arrow-up-long"></i>
-                </span>
-              </div>
-            </div>
-            <div class="border-b-2 border-site-transparent_light_white"></div>
-          </div> -->
         </div>
       </section>
       <!-- ./ Our Service -->

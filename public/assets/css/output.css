@@ -902,6 +902,11 @@ section{
   margin-right: auto;
 }
 
+.my-auto{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .ms-auto{
   margin-inline-start: auto;
 }
@@ -1624,6 +1629,10 @@ section{
 }
 
 @media (min-width: 768px){
+  .md\:visible{
+    visibility: visible;
+  }
+
   .md\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -1721,6 +1730,10 @@ section{
     gap: 30px;
   }
 
+  .md\:gap-6{
+    gap: 1.5rem;
+  }
+
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1745,6 +1758,14 @@ section{
   .md\:text-custom-sm{
     font-size: 0.875rem;
   }
+
+  .md\:text-\[30px\]{
+    font-size: 30px;
+  }
+
+  .md\:text-custom-xl{
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px){
@@ -1758,8 +1779,37 @@ section{
 }
 
 @media (min-width: 1280px){
+  .xl\:my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .xl\:block{
     display: block;
+  }
+
+  .xl\:basis-1\/2{
+    flex-basis: 50%;
+  }
+
+  .xl\:basis-5\/12{
+    flex-basis: 41.666667%;
+  }
+
+  .xl\:basis-7\/12{
+    flex-basis: 58.333333%;
+  }
+
+  .xl\:flex-row{
+    flex-direction: row;
+  }
+
+  .xl\:content-center{
+    align-content: center;
+  }
+
+  .xl\:items-center{
+    align-items: center;
   }
 
   .xl\:gap-12{
@@ -1770,7 +1820,39 @@ section{
     gap: 180px;
   }
 
+  .xl\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .xl\:self-center{
+    align-self: center;
+  }
+
+  .xl\:align-middle{
+    vertical-align: middle;
+  }
+
   .xl\:text-\[70px\]{
     font-size: 70px;
+  }
+
+  .xl\:text-custom-sm{
+    font-size: 0.875rem;
+  }
+
+  .xl\:text-custom-base{
+    font-size: 0.75rem;
+  }
+
+  .xl\:text-\[54px\]{
+    font-size: 54px;
+  }
+
+  .xl\:text-custom-xl{
+    font-size: 1.5rem;
+  }
+
+  .xl\:text-\[40px\]{
+    font-size: 40px;
   }
 }
