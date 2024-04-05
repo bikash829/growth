@@ -1704,6 +1704,14 @@ section{
     width: 50vw;
   }
 
+  .md\:w-\[60vw\]{
+    width: 60vw;
+  }
+
+  .md\:w-\[55vw\]{
+    width: 55vw;
+  }
+
   .md\:basis-4\/12{
     flex-basis: 33.333333%;
   }
