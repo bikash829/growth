@@ -95,6 +95,11 @@
   );
 }
 
+@media screen and (min-width: 1280px) {
+  .nav-container {
+    background-image: none;
+  }
+}
 .main-gradient-circle {
   /* background-image: linear-gradient(
     45deg,

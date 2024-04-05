@@ -26,20 +26,26 @@
       <!-- Header -->
       <header class="flex flex-col gap-10" id="home">
         <!-- navigation menu  -->
-        <nav id="nav" class="container flex flex-col gap-6">
+        <nav
+          id="nav"
+          class="container flex flex-col gap-6 xl:flex-row xl:justify-between"
+        >
           <div class="flex flex-row justify-between">
             <div>
-              <button
+              <div
                 class="logo button button-dark text-custom-md text-site-transparent_light_white"
               >
                 <a href="#"
-                  >The<span class="font-semibold text-site-white"
+                  >The<span
+                    class="font-semibold text-site-white xl:text-custom-lg"
                     >Growth</span
                   ></a
                 >
-              </button>
+              </div>
             </div>
-            <div class="content-center">
+
+            <!-- Hamburger menu -->
+            <div class="content-center xl:hidden">
               <div id="hamburgerMenu" class="menu-toggle cursor-pointer">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -50,11 +56,11 @@
           <!-- navigation menu  -->
           <div
             id="navMenu"
-            class="nav-container hidden flex-col gap-9 rounded-2xl border border-gray-700 py-10 text-custom-2xl text-site-transparent_light_white md:flex-row md:justify-between md:px-10"
+            class="nav-container hidden flex-col gap-9 rounded-2xl border border-gray-700 py-10 text-custom-2xl text-site-transparent_light_white md:flex-row md:justify-between md:px-10 xl:flex xl:flex-row xl:border-none xl:p-0 xl:text-custom-md"
           >
             <!-- Menu  -->
             <ul
-              class="flex flex-col justify-center gap-6 text-center md:text-start"
+              class="flex flex-col justify-center gap-6 text-center md:text-start xl:my-auto xl:flex-row xl:gap-12"
             >
               <li>
                 <a
@@ -89,36 +95,43 @@
             <div
               class="grid grid-cols-2 gap-6 text-custom-xl text-white md:gap-9"
             >
-              <div class="text-right">
+              <div class="text-right xl:hidden">
                 <div class="social-icon inline-block">
                   <a href="linkdin.com"
                     ><i class="fa-brands fa-linkedin-in"></i
                   ></a>
                 </div>
               </div>
-              <div class="text-start">
+              <div class="text-start xl:hidden">
                 <div class="social-icon inline-block">
                   <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
               </div>
-              <div class="text-right">
+              <div class="text-right xl:hidden">
                 <div class="social-icon inline-block">
                   <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
                 </div>
               </div>
-              <div class="text-start">
+              <div class="text-start xl:hidden">
                 <div class="social-icon inline-block">
                   <a href="#"><i class="fa-brands fa-behance"></i></a>
                 </div>
               </div>
-              <div class="col-span-2 text-center text-white">
+              <div class="col-span-2 text-center text-white xl:hidden">
                 <button
                   class="button border border-site-border_blue bg-site-blue bg-opacity-20 transition duration-1000 hover:bg-opacity-60"
                 >
-                  Get Free Template
+                  Get Now - It's Free!
                 </button>
               </div>
             </div>
+          </div>
+          <div class="hidden text-center text-white xl:block">
+            <button
+              class="button border border-site-border_blue bg-site-blue bg-opacity-20 transition duration-1000 hover:bg-opacity-60"
+            >
+              Get Now - It's Free!
+            </button>
           </div>
           <!--./ navigation menu -->
         </nav>

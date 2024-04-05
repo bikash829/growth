@@ -1798,6 +1798,14 @@ section{
     display: block;
   }
 
+  .xl\:flex{
+    display: flex;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
   .xl\:w-\[50vw\]{
     width: 50vw;
   }
@@ -1816,6 +1824,10 @@ section{
 
   .xl\:flex-row{
     flex-direction: row;
+  }
+
+  .xl\:justify-between{
+    justify-content: space-between;
   }
 
   .xl\:gap-10{
@@ -1837,6 +1849,18 @@ section{
   .xl\:rounded-t-\[3rem\]{
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
+  }
+
+  .xl\:border-none{
+    border-style: none;
+  }
+
+  .xl\:bg-none{
+    background-image: none;
+  }
+
+  .xl\:p-0{
+    padding: 0px;
   }
 
   .xl\:px-\[72px\]{
@@ -1891,5 +1915,9 @@ section{
 
   .xl\:text-custom-xl{
     font-size: 1.5rem;
+  }
+
+  .xl\:text-custom-3lg{
+    font-size: 22px;
   }
 }
