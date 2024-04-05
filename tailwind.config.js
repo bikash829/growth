@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      // padding: "5%",
+      padding: 0,
       screens: {
         DEFAULT: "90vw",
         sm: "92vw",
-        lg: "75rem",
+        xl: "1200px",
       },
     },
     extend: {

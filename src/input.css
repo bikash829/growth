@@ -41,7 +41,10 @@
 
 @layer base {
   section {
-    @apply flex flex-col gap-10;
+    @apply flex flex-col gap-6 md:gap-8 xl:gap-16;
+  }
+  .gap-as-section {
+    @apply flex flex-col gap-6  md:gap-8 xl:gap-16;
   }
 }
 
