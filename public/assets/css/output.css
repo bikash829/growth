@@ -1672,6 +1672,10 @@ section{
     height: 464px;
   }
 
+  .md\:h-\[281px\]{
+    height: 281px;
+  }
+
   .md\:w-0{
     width: 0px;
   }
@@ -1706,6 +1710,10 @@ section{
 
   .md\:w-\[55vw\]{
     width: 55vw;
+  }
+
+  .md\:w-\[230px\]{
+    width: 230px;
   }
 
   .md\:basis-4\/12{
@@ -1806,12 +1814,64 @@ section{
     display: none;
   }
 
+  .xl\:h-\[564px\]{
+    height: 564px;
+  }
+
+  .xl\:h-\[282px\]{
+    height: 282px;
+  }
+
+  .xl\:h-\[281px\]{
+    height: 281px;
+  }
+
+  .xl\:h-\[285px\]{
+    height: 285px;
+  }
+
+  .xl\:h-\[300px\]{
+    height: 300px;
+  }
+
+  .xl\:h-\[500px\]{
+    height: 500px;
+  }
+
   .xl\:w-\[50vw\]{
     width: 50vw;
   }
 
   .xl\:w-\[55vw\]{
     width: 55vw;
+  }
+
+  .xl\:w-\[564px\]{
+    width: 564px;
+  }
+
+  .xl\:w-\[282px\]{
+    width: 282px;
+  }
+
+  .xl\:w-\[281px\]{
+    width: 281px;
+  }
+
+  .xl\:w-\[500px\]{
+    width: 500px;
+  }
+
+  .xl\:w-\[288px\]{
+    width: 288px;
+  }
+
+  .xl\:w-\[80px\]{
+    width: 80px;
+  }
+
+  .xl\:w-\[300px\]{
+    width: 300px;
   }
 
   .xl\:basis-5\/12{
@@ -1844,6 +1904,10 @@ section{
 
   .xl\:gap-\[180px\]{
     gap: 180px;
+  }
+
+  .xl\:gap-\[72px\]{
+    gap: 72px;
   }
 
   .xl\:rounded-t-\[3rem\]{
@@ -1919,5 +1983,13 @@ section{
 
   .xl\:text-custom-3lg{
     font-size: 22px;
+  }
+
+  .xl\:text-custom-base{
+    font-size: 0.75rem;
+  }
+
+  .xl\:text-\[64px\]{
+    font-size: 64px;
   }
 }
