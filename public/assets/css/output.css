@@ -1763,6 +1763,14 @@ section{
     flex-basis: 66.666667%;
   }
 
+  .md\:basis-3\/12{
+    flex-basis: 25%;
+  }
+
+  .md\:basis-9\/12{
+    flex-basis: 75%;
+  }
+
   .md\:cursor-pointer{
     cursor: pointer;
   }
@@ -1899,6 +1907,10 @@ section{
 
   .xl\:basis-7\/12{
     flex-basis: 58.333333%;
+  }
+
+  .xl\:basis-6\/12{
+    flex-basis: 50%;
   }
 
   .xl\:flex-row{
