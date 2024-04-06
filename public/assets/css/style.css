@@ -6,6 +6,9 @@
   transform-origin: left center;
   transition: transform 0.3s;
 }
+#rightBubble:hover {
+  transform: translate(50%, -50%) scale(1.1);
+}
 
 #leftBubble {
   top: 50%;
@@ -13,6 +16,10 @@
   transform: translate(-50%, -50%);
   transform-origin: right center;
   transition: transform 0.3s;
+}
+
+#leftBubble:hover {
+  transform: translate(-50%, -50%) scale(1.1);
 }
 /* <-- header  */
 
